@@ -4,7 +4,6 @@ require './lib/word'
 require './definition/lib/definition'
 
 get('/') do
-
 	erb :index
 end
 
