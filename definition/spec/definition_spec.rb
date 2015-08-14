@@ -3,7 +3,8 @@ require 'definition'
 
 describe Definition do
   before do
-    @def = Definition.new("Fictional cartoon character")
+    Definition.clear
+    @def = Definition.new({ definition: "Fictional cartoon character" })
   end
   describe '#definition' do
     it 'returns string object was initialized with' do

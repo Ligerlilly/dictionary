@@ -1,8 +1,8 @@
 class Definition
   attr_accessor :definition
   @@def_array = []
-  def initialize(definition)
-    @definition = definition
+  def initialize(attributes)
+    @definition = attributes[:definition]
     @id = @@def_array.length + 1
   end
 
