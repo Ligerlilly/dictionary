@@ -1,8 +1,8 @@
 class Definition
-  attr_accessor :definition, :id
+  attr_accessor :id, :definitions
   @@def_array = []
-  def initialize(attributes)
-    @definition = attributes[:definition]
+  def initialize
+    @definitions = []
     @id = @@def_array.length + 1
   end
 
@@ -17,4 +17,10 @@ class Definition
   def self.clear
     @@def_array = []
   end
+
+  def add_def(definition)
+    definitions.push(definition)
+  end
+
+
 end

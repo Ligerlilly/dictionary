@@ -18,6 +18,7 @@ post '/add_word_form' do
   redirect '/'
 end
 
-get '/word_def' do
-  erb :def_form
+get '/word/:id/def' do
+	@word = Word.find(params['id'].to_i)
+  erb :defs
 end
