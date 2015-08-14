@@ -5,6 +5,10 @@
 
 ## description
  User can enter words then add definitions to those words.
+
+## Link to Heroku
+ https://fast-wildwood-5127.herokuapp.com/
+ 
 ##	Setup
 
 * Download the Repo
@@ -13,7 +17,7 @@
 * `rspec` to test
 
 ###	Technologies Used
- rspec 
+ rspec
  capybara
  sinatra
 
