@@ -7,7 +7,10 @@ class Definition
   end
 
   def self.all
-    @@def_array 
+    @@def_array
   end
 
+  def save
+    @@def_array.push(self)
+  end
 end

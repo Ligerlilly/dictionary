@@ -16,4 +16,10 @@ describe Definition do
       expect(Definition.all).to eq []
     end
   end
+
+  describe '#save' do
+    it 'returns an array containing self' do
+      expect(@def.save).to eq [@def]
+    end
+  end
 end
