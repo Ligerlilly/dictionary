@@ -1,5 +1,5 @@
 class Definition
-  attr_accessor :definition
+  attr_accessor :definition, :id
   @@def_array = []
   def initialize(attributes)
     @definition = attributes[:definition]

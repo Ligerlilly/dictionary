@@ -1,0 +1,11 @@
+<h1>Welcome to Dictionary</h1>
+
+<a href="/add_word"><button class='btn btn-success'>Add Word</button></a>
+
+<h4>Word List</h4>
+
+<ul>
+  <% Word.all.each do |word| %>
+  <a href="/word/<%= word.id %>/def"><li><%= word.word %></li></a>
+  <% end %>
+</ul>

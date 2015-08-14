@@ -1,8 +1,8 @@
 class Word
   attr_accessor :word
   @@word_array = []
-  def initialize(word)
-    @word = word
+  def initialize(attributes)
+    @word = attributes['word']
     @id = @@word_array.length + 1
   end
 

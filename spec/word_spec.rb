@@ -3,10 +3,11 @@ require 'word'
 
 describe Word do
   before do
-    @word = Word.new("Homer")
+    Word.clear
+    @word = Word.new({ word: "Homer" })
   end
   describe '#word' do
-    it 'returns a string' do
+    it 'returns string passed in when variable was initialized' do
       expect(@word.word).to eq "Homer"
     end
   end
@@ -20,6 +21,12 @@ describe Word do
   describe '#save' do
     it 'returns an array containing self' do
       expect(@word.save).to eq [@word]
+    end
+  end
+
+  describe '.clear' do
+    it 'empties @@word_array' do
+      expect(Word.clear).to eq []
     end
   end
 
