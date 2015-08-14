@@ -13,4 +13,8 @@ class Word
   def save
     @@word_array.push(self)
   end
+
+  def self.clear
+    @@word_array = []
+  end
 end
