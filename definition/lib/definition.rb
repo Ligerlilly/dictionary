@@ -22,5 +22,15 @@ class Definition
     definitions.push(definition)
   end
 
+  def self.find(id)
+    found_def = nil
+    @@def_array.each do |definition|
+      if id == definition.id
+        found_def = definition
+      end
+    end
+    found_def
+  end
+
 
 end

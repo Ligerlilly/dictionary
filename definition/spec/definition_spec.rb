@@ -30,7 +30,13 @@ describe Definition do
   describe "#add_def" do
     it "returns an array containing argument" do
       expect(@def.add_def('hi')).to eq ['hi']
-      expect(@def.add_def('there')).to eq ['hi', 'there']
+    end
+  end
+
+  describe '.find' do
+    it 'returns a Definition object based on id' do
+      @def.save
+      expect(Definition.find(1)).to eq @def
     end
   end
 end
