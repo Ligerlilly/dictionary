@@ -30,5 +30,12 @@ describe Word do
     end
   end
 
+  describe '.find' do
+    it 'finds and returns a word based on id' do
+      @word.save
+      expect(Word.find(1)).to eq @word
+    end
+  end
+
 
 end

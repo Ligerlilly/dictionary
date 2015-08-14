@@ -17,3 +17,7 @@ post '/add_word_form' do
 	@word.save
   redirect '/'
 end
+
+get '/word_def' do
+  erb :def_form
+end
