@@ -22,4 +22,10 @@ describe Definition do
       expect(@def.save).to eq [@def]
     end
   end
+
+  describe ".clear" do
+    it 'returns empty @@def_array' do
+      expect(Definition.clear).to eq []
+    end
+  end
 end

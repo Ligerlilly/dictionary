@@ -13,4 +13,8 @@ class Definition
   def save
     @@def_array.push(self)
   end
+
+  def self.clear
+    @@def_array = []
+  end
 end
