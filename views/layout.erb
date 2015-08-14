@@ -3,9 +3,26 @@
 		<title>dict</title>
 		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
 		<link rel='stylesheet' href='css/main.css'>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div class='container'>
+	  <div class='container'>
+		<nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+
+            <a class="navbar-brand" href="/">Dictionary</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="/word_form">Add Word</a></li>
+              <li><a href="#"></a></li>
+
+            </ul>
+
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
 			<%= yield %>
 		</div>
 	</body>
