@@ -17,5 +17,11 @@ describe Word do
     end
   end
 
+  describe '#save' do
+    it 'returns an array containing self' do
+      expect(@word.save).to eq [@word]
+    end
+  end
+
 
 end

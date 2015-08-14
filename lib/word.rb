@@ -9,4 +9,8 @@ class Word
   def self.all
     @@word_array
   end
+
+  def save
+    @@word_array.push(self)
+  end
 end
